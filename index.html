@@ -1,19 +1,79 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html><
 
-  <head>
-    <title>cadastro De cliente</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
+
+
+
+<head>
+  <title>Minha página pessoal</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    backgroud-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+
+  header ul {
+    list-style: none;
+  }
+
+
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+  section {
+    margin: 20px 0;
+  }
+
+
+  section#sobre,
+  section#projetos,
+  section#cadastro,
+  section#contato {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  }
+
+
+  footer {
+    text-align: center;
+    margin-top: 20px
+  }
+ h3{
+   text-align: center;
       }
 
-      h2 {
-        text-align: center;
-      }
 
       form {
         max-width: 400px;
@@ -24,11 +84,13 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
+
       label,
       input {
         display: block;
         margin-bottom: 10px;
       }
+
 
       input[type="text"],
       input[type="email"],
@@ -38,6 +100,7 @@
         border: 1px solid #ccc;
         border-radius: 5px;
       }
+
 
       input[type="submit"] {
         width: 100%;
@@ -50,67 +113,98 @@
         /* Muda o cursor do mouse quando é passado sobre este botão na página */
       }
 
+
       input[type="submit"]:hover {
         background-color: #0056b3;
         /* Faz com que mude a cor quando o cursor passa em cima do botão */
       }
-    </style>
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./index.css">
-  </head>
 
-  <body>
-    <h2>cadastro De Pessoa</h2>
+
+</style>
+
+
+
+
+<body>
+  <header>
+    <h1>Bem vindo a página de Nicoli</h1>
+    <nav>
+      <ul>
+
+
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#contato">Contato</a></li>
+
+
+      </ul>
+    </nav>
+  </header>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá , meu nome é Nicoli , tenho 13 anos e gosto muito de ouvir música , algumas pessoas falam que eu canto bem,
+      mas eu ainda não sou muito boa nisso .</p>
+    <p> Outra coisa sobre mim é que eu sou bem melancólica , gosto muito de criar lembraças com quem eu amo , e também
+      gosto de escrever sobre algumas pessoas que foram embora da minha vida nas notas do meu celular , isso de alguma
+      forma me ajuda a falar o que eu sinto. eu gosto de ler também , no momento eu estou lendo o livro eu e esse meu
+      coração , to amando .</p>
+    <p>Já fui a Ofelia em uma peça de teatro , foi um momento muito bom da minha vida o festival de teatro .
+    <p> Eu poderia ficar horas escrevendo sobre os melhores momentos que eu já tive mas ia ser muita coisa, e também ia
+      ser feio expor algumas pessoas aqui, é isso beijosss.
+    <P>
+
+
+
+
+  </section>
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <ul>
+      <li>Projeto 1: <a href="#">Descrição 1</a></li>
+      <li>Projeto 2: <a href="#">Descrição 2</a></li>
+    </ul>
+  </section>
+  <section id="cadastro">
+    <h3>cadastro De Pessoa</h3>
     <form>
       <label>Nome:</label>
-      <input type="text" id="Nome" nome="Nome" required="">
+      <input type="text" id="Nome" nome="Nome" required>
+
+
 
 
       <label>Email:</label>
-      <input type="email" id="Email" nome="Email" required="">
+      <input type="Email" id="Email" nome="Email" required>
+
+
 
 
       <label>Telefone:</label>
-      <input type="tel" id="Telefone" nome="Telefone" required="">
+      <input type="tel" id="Telefone" nome="Telefone" required>
       <input type="submit" value="Cadastrar">
 
 
+
+
     </form>
+  </section>
 
 
 
 
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo via <a
+        href="mailto:nicoli_ventura@estudante.sesisenai.org.br">nicoli_ventura@estudante.sesisenai.org.br</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2024 - nicoli</p>
+  </footer>
+</body>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    2
-  </body>
 
 </html>
+
